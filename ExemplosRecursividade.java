@@ -1,4 +1,4 @@
-public class ArraysRecursivo{
+public class ExemplosRecursividade{
 
     public static void main(String[] args) {
         int[] arr = {1,2,233,4,5,6,7,232};

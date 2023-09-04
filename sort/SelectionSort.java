@@ -1,18 +1,15 @@
+package sort;
 import java.util.Arrays;
 
 public class SelectionSort {
 
     public static void main(String[] args) {
-        int[] arr = new int[10];
-
-        for(int i=0;i < 10;i++) {
-            arr[i] = (int) (Math.random() * 100);
-        }
-
-        System.out.println(Arrays.toString(sort(arr)));
+        int[] arr = {3,23,53,32,14,21,12,84,56,45};
+        sort(arr);
+        System.out.println(Arrays.toString(arr));
     } 
 
-    private static int[] sort(int[] arr) {
+    private static void sort(int[] arr) {
 
         for(int i=0; i < arr.length-1;i++) {
 
@@ -28,7 +25,5 @@ public class SelectionSort {
             arr[i] = arr[menorIndice];
             arr[menorIndice] = temp;
         }
-
-        return arr;
     }
 }
